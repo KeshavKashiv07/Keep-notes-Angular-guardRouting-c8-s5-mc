@@ -1,0 +1,13 @@
+<div id="login-form">
+    <h6>You need to frist login to manage notes</h6><br>
+
+    <mat-form-field appearance="legacy">
+        <input matInput type="email" name="Email" [(ngModel)]="email" placeholder="Email">
+    </mat-form-field><br>
+
+    <mat-form-field appearance="legacy">
+        <input matInput name="Password" [(ngModel)]="password" placeholder="Enter Password">
+    </mat-form-field><br>
+
+    <button mat-raised-button color="primary" (click)="validatePassword()">login</button>
+</div>
